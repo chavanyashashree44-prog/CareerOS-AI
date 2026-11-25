@@ -1,0 +1,453 @@
+/* =========================================
+   AI RESUME PAGE
+   CareerOS AI Theme
+========================================= */
+
+.resume-content {
+    min-height: calc(100vh - 72px);
+    padding: 38px 44px 35px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.resume-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 28px;
+}
+
+.resume-eyebrow {
+    margin: 0 0 9px;
+    color: #7654ed;
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: 1.6px;
+}
+
+.resume-page-header h1 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 750;
+}
+
+.resume-description {
+    max-width: 720px;
+    margin: 12px 0 0;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.resume-header-icon {
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(124, 92, 255, 0.18);
+    border-radius: 21px;
+    background: rgba(124, 92, 255, 0.10);
+    color: #7654ed;
+}
+
+
+/* =========================================
+   AI BANNER
+========================================= */
+
+.resume-ai-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+    padding: 21px 24px;
+    overflow: hidden;
+    border: 1px solid rgba(124, 92, 255, 0.22);
+    border-radius: 20px;
+    background:
+        linear-gradient(
+            105deg,
+            rgba(231, 220, 255, 0.72),
+            rgba(241, 239, 255, 0.76),
+            rgba(225, 237, 255, 0.72)
+        );
+}
+
+.resume-ai-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(124, 92, 255, 0.14);
+    color: #7654ed;
+}
+
+.resume-ai-banner span {
+    color: #7654ed;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1.2px;
+}
+
+.resume-ai-banner h3 {
+    margin: 5px 0 5px;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.resume-ai-banner p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   CREATE / UPLOAD CARDS
+========================================= */
+
+.resume-options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 25px;
+}
+
+.resume-action-card {
+    display: flex;
+    gap: 21px;
+    min-height: 245px;
+    padding: 27px;
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.resume-action-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(124, 92, 255, 0.28);
+}
+
+.resume-action-icon {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.resume-action-icon.create {
+    background: rgba(124, 92, 255, 0.12);
+    color: #7654ed;
+}
+
+.resume-action-icon.upload {
+    background: rgba(65, 153, 239, 0.11);
+    color: #4199ef;
+}
+
+.resume-action-content {
+    flex: 1;
+}
+
+.resume-card-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #7654ed;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1.1px;
+}
+
+.resume-action-content h2 {
+    margin: 0 0 10px;
+    color: var(--text-primary);
+    font-size: 21px;
+}
+
+.resume-action-content p {
+    max-width: 480px;
+    min-height: 62px;
+    margin: 0 0 20px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.resume-primary-button,
+.resume-secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 17px;
+    border-radius: 11px;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.resume-primary-button {
+    border: 1px solid #7654ed;
+    background: #7654ed;
+    color: white;
+}
+
+.resume-primary-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.resume-secondary-button {
+    border: 1px solid rgba(124, 92, 255, 0.35);
+    background: rgba(124, 92, 255, 0.07);
+    color: #7654ed;
+}
+
+.resume-secondary-button:hover {
+    background: rgba(124, 92, 255, 0.13);
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.resume-benefits-panel {
+    padding: 25px 27px;
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+}
+
+.resume-benefits-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.resume-benefits-header .resume-eyebrow {
+    margin-bottom: 6px;
+}
+
+.resume-benefits-header h2 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 18px;
+}
+
+.resume-benefits-header > svg {
+    color: #7654ed;
+}
+
+.resume-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px 35px;
+}
+
+.resume-benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.resume-benefit > svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #18b978;
+}
+
+.resume-benefit strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+    font-size: 13px;
+}
+
+.resume-benefit span {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.resume-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 3px 5px;
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+    .resume-content {
+        padding: 30px 25px;
+    }
+
+    .resume-options-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .resume-content {
+        padding: 25px 18px;
+    }
+
+    .resume-page-header {
+        align-items: flex-start;
+    }
+
+    .resume-page-header h1 {
+        font-size: 27px;
+    }
+
+    .resume-header-icon {
+        display: none;
+    }
+
+    .resume-ai-banner {
+        align-items: flex-start;
+        padding: 18px;
+    }
+
+    .resume-action-card {
+        flex-direction: column;
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .resume-action-content p {
+        min-height: auto;
+    }
+
+    .resume-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    /* =========================================================
+   SAVED RESUME — PROFESSIONAL PREVIEW REFINEMENT
+   ========================================================= */
+
+/* Keep the resume content focused instead of stretching too wide */
+.resume-content {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* Slightly tighter page header */
+.resume-page-header {
+    margin-bottom: 22px;
+}
+
+/* Give resume sections a cleaner vertical rhythm */
+.resume-content section {
+    margin-bottom: 22px;
+}
+
+/* Reduce excessive internal spacing inside content blocks */
+.resume-content section > div {
+    gap: 14px;
+}
+
+/* Keep paragraphs readable without becoming too wide */
+.resume-content p {
+    max-width: 900px;
+    line-height: 1.55;
+}
+
+/* Make action cards more compact */
+.resume-action-card {
+    padding: 22px;
+}
+
+/* Keep Resume Intelligence visually balanced */
+.resume-benefits-panel {
+    margin-top: 22px;
+}
+
+/* Slightly tighten the intelligence cards */
+.resume-benefit {
+    padding: 14px;
+}
+
+/* Footer should not create a huge final gap */
+.resume-footer {
+    margin-top: 28px;
+    padding-top: 18px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .resume-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .resume-content section {
+        margin-bottom: 18px;
+    }
+
+    .resume-action-card {
+        padding: 18px;
+    }
+}
+
+}

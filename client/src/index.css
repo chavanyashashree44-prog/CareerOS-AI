@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+
+:root {
+    font-family: "Inter", sans-serif;
+
+    --font-display: "Plus Jakarta Sans", sans-serif;
+
+    /* =====================================================
+       LIGHT THEME
+       ===================================================== */
+
+    --bg-primary: #f5f7ff;
+    --bg-secondary: rgba(255, 255, 255, 0.72);
+    --bg-tertiary: rgba(245, 247, 252, 0.82);
+
+    --text-primary: #18203a;
+    --text-secondary: #5d6680;
+    --text-muted: #929ab0;
+
+    --border: rgba(117, 130, 175, 0.16);
+    --border-strong: rgba(117, 130, 175, 0.25);
+
+    --accent: #7654e8;
+    --accent-hover: #6644d8;
+    --accent-soft: rgba(118, 84, 232, 0.10);
+    --accent-glow: rgba(118, 84, 232, 0.18);
+
+    --success: #16b878;
+    --warning: #f0a52b;
+    --danger: #e45b70;
+
+    /* Glass */
+    --glass-bg: rgba(255, 255, 255, 0.58);
+    --glass-bg-strong: rgba(255, 255, 255, 0.78);
+    --glass-border: rgba(255, 255, 255, 0.78);
+    --glass-shadow: rgba(80, 93, 145, 0.10);
+
+    --topbar-glass: rgba(248, 249, 255, 0.70);
+
+    /* Ambient background */
+    --ambient-purple: rgba(163, 117, 255, 0.18);
+    --ambient-blue: rgba(104, 181, 255, 0.15);
+    --ambient-pink: rgba(255, 154, 208, 0.12);
+
+    /* AI */
+    --ai-card-start: rgba(239, 232, 255, 0.76);
+    --ai-card-end: rgba(255, 255, 255, 0.68);
+
+    /* Cards */
+    --card-glow: rgba(130, 92, 245, 0.28);
+
+    /* Shadows */
+    --shadow-sm:
+        0 5px 20px rgba(74, 86, 135, 0.07);
+
+    --shadow-md:
+        0 14px 40px rgba(74, 86, 135, 0.11);
+
+    --shadow-lg:
+        0 24px 70px rgba(74, 86, 135, 0.14);
+
+    /* Radius */
+    --radius-sm: 9px;
+    --radius-md: 13px;
+    --radius-lg: 18px;
+
+    color: var(--text-primary);
+    background: var(--bg-primary);
+
+    color-scheme: light;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html.dark {
+    color-scheme: dark;
+
+    --bg-primary: #0d1020;
+    --bg-secondary: rgba(25, 29, 48, 0.70);
+    --bg-tertiary: rgba(34, 39, 62, 0.72);
+
+    --text-primary: #f5f6ff;
+    --text-secondary: #b5bad0;
+    --text-muted: #7c829a;
+
+    --border: rgba(171, 181, 225, 0.12);
+    --border-strong: rgba(171, 181, 225, 0.20);
+
+    --accent: #9a7cff;
+    --accent-hover: #aa91ff;
+    --accent-soft: rgba(154, 124, 255, 0.13);
+    --accent-glow: rgba(154, 124, 255, 0.22);
+
+    --success: #36d796;
+    --warning: #ffb94f;
+    --danger: #f16d80;
+
+    /* Glass */
+    --glass-bg: rgba(28, 33, 53, 0.55);
+    --glass-bg-strong: rgba(32, 37, 60, 0.72);
+    --glass-border: rgba(181, 190, 235, 0.14);
+    --glass-shadow: rgba(0, 0, 0, 0.28);
+
+    --topbar-glass: rgba(13, 16, 32, 0.72);
+
+    /* Ambient */
+    --ambient-purple: rgba(128, 86, 255, 0.15);
+    --ambient-blue: rgba(72, 141, 255, 0.10);
+    --ambient-pink: rgba(255, 106, 201, 0.08);
+
+    /* AI */
+    --ai-card-start: rgba(48, 40, 78, 0.76);
+    --ai-card-end: rgba(22, 26, 43, 0.72);
+
+    --card-glow: rgba(151, 120, 255, 0.30);
+
+    /* Shadows */
+    --shadow-sm:
+        0 6px 24px rgba(0, 0, 0, 0.20);
+
+    --shadow-md:
+        0 15px 45px rgba(0, 0, 0, 0.28);
+
+    --shadow-lg:
+        0 25px 75px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 320px;
+    min-height: 100%;
+
+    background: var(--bg-primary);
+
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease;
+}
+
+body {
+    margin: 0;
+
+    min-width: 320px;
+    min-height: 100vh;
+
+    background: var(--bg-primary);
+
+    color: var(--text-primary);
+
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+::selection {
+    background: var(--accent);
+    color: white;
+}
+
+
+/* =========================================================
+   THEME TRANSITIONS
+   ========================================================= */
+
+body,
+.app,
+.sidebar,
+.topbar,
+.panel,
+.stat-card,
+.search-box,
+.theme-switcher,
+.ai-insight,
+.ai-mini-card {
+    transition:
+        background-color 0.35s ease,
+        border-color 0.35s ease,
+        color 0.25s ease,
+        box-shadow 0.35s ease;
+}
